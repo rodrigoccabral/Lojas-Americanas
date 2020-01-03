@@ -1,0 +1,164 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <link rel="stylesheet" type="text/css" href="estilos.css">
+        <link rel="stylesheet" href="glide.core.min.css">
+        <link rel="stylesheet" href="glide.theme.min.css">
+        <title>Americanas</title>
+    </head>
+    <body>
+        <div id="cabecalho">
+           <div id="topo">
+                <img src="imagens/toldo.png">
+            </div>
+            <div id="meio">
+                        <div id="divlogo">
+                            <h3 id="titulologo"><u>americanas</u>.com</h3>
+                        </div>
+            
+                        <div id="formulario">
+                            <form id="id-form-busca" action="/busca">                           
+                                <input id="input-procurar" type="text" placeholder="tem tuuudo, pode procurar :)"><button id="botao-procurar" type="button">                 
+                            </form>          
+                        </div>
+
+                        <div id="ola">
+                            <h3>olá, faça seu login ou cadastre-se   <img src="imagens/arrow-down-red.png"></h3>
+                        </div>
+                        <button id="botao-coracao"></button>
+                        <button id="botao-cesta"></button>
+
+
+                        <ul id="ul-lista">
+                            <li class="lista">empresas</li>
+                            <li class="lista">compre da China</li>
+                            <li class="lista">baixe o app</li>
+                            <li class="lista">seja prime</li>
+                            <li class="lista">cartão americanas.com</li>
+                            <li class="lista">pegue hoje</li>
+                            <li class="lista">nossas marcas</li>
+                            <li class="lista">oferta do dia</li>
+                            
+                        </ul>
+            </div>
+            <div id="fim">
+               
+                    <nav id="nav-menubar" role="menubar">
+                        <h3 id="h3-menubar"><img id="tres-barras-img" src="imagens/tres-barras.png">compre por departamento<img src="imagens/arrow-down.png"></h3>
+                    </nav>
+               
+                        <ul id="ul-lista-side-nav">
+                            <li class="lista-side-nav">Centauro</li>
+                            <li class="lista-side-nav">ar condicionado</li>
+                            <li class="lista-side-nav">celulares</li>
+                            <li class="lista-side-nav">eletrodomésticos</li>
+                            <li class="lista-side-nav">brinquedos</li>
+                            <li class="lista-side-nav">beleza & perfumaria</li>
+                            <li class="lista-side-nav">notebooks</li>
+                        </ul>
+
+                                                        
+            </div>         
+        </div>
+
+    <div id="corpo">
+            <img id="banner" src="https://images-americanas.b2w.io/spacey/2019/12/11/19_NATAL_HOME_header_desk.png">
+        
+
+        <!--Carrossel-->
+
+        <div class="slideshow-container">
+
+            <div class="mySlides"> 
+            
+                <img id="imagem1" src="imagens/slide1.png">
+    
+            </div>
+
+            <div class="mySlides"> 
+                
+                    <img id="imagem2" src="imagens/slide2.png">
+               
+            </div>
+
+            <div class="mySlides"> 
+               
+                <img id="imagem3" src="imagens/slide3.png">
+     
+            </div>
+
+            <!--Botão pra frente e pra trás-->
+
+            <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+            <a class="next" onclick="plusSlides(1)">&#10095;</a>
+
+            <!--Pontos e circulos-->
+
+            <div style="text-align: center">
+                <span class="dot" onclick="currentSlide(1)"></span>
+                <span class="dot" onclick="currentSlide(2)"></span>
+                <span class="dot" onclick="currentSlide(3)"></span>
+            </div>
+        </div>
+
+        <div id="presentes">
+            <img class="imagem-presente" src="imagens/100.png">
+            <img class="imagem-presente" src="imagens/200.png">
+            <img class="imagem-presente" src="imagens/300.png">
+            <img class="imagem-presente" src="imagens/400.png">
+        </div>
+
+        <br>
+
+    <div style="position: absolute; top: 820px; left: 45px">
+        <h1 style="color: rgb(107, 104, 104)">as melhores ofertas pro seu natal</h1>
+    </div>
+
+    <div id="promocoes">
+        <ul id="ul-promocoes">
+            <li class="li-ul-promocoes"><img src="imagens/promocao1.png"></li>
+            <li class="li-ul-promocoes"><img src="imagens/promocao2.png"></li>
+            <li class="li-ul-promocoes"><img src="imagens/promocao3.png"></li>
+            <li class="li-ul-promocoes"><img src="imagens/promocao4.png"></li>
+        </ul>
+    </div>
+
+    <div style="position: absolute; top: 1340px; left: 45px">
+        <h1 style="color: rgb(70, 68, 68)">as melhores ofertas</h1>
+    </div>
+
+    <div class="glide">
+        <div class="glide__track" data-glide-el="track">
+          <ul class="glide__slides">
+            <li class="glide__slide"><img src="imagens/celular2.png"></li>
+            <li class="glide__slide"><img src="imagens/celular4.png"></li>
+            <li class="glide__slide"><img src="imagens/celular5.png"></li>
+            <li class="glide__slide"><img src="imagens/celular6.png"></li>
+            <li class="glide__slide"><img src="imagens/celular7.png"></li>
+            <li class="glide__slide"><img src="imagens/celular8.png"></li>
+            <li class="glide__slide"><img src="imagens/celular9.png"></li>
+            <li class="glide__slide"><img src="imagens/celular10.png"></li>
+            
+          </ul>
+        </div>
+        <div class="glide__arrows" data-glide-el="controls">
+            <button class="glide__arrow glide__arrow--left" data-glide-dir="<">&#10094;</button>
+            <button class="glide__arrow glide__arrow--right" data-glide-dir=">">&#10095;</button>
+          </div>
+      </div>
+
+
+
+
+    </div>
+        <script src="americanas.js"></script>
+        <script src="https://cdn.jsdelivr.net/npm/@glidejs/glide"></script>
+        <script>
+            const config = {
+                type: "carousel",
+                perView: 4
+            };
+        new Glide('.glide', config).mount();
+        </script>
+    </body>
+</html>
