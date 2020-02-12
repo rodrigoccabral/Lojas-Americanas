@@ -6,6 +6,7 @@ body {
     height: 100%;
     max-width: 1400px;
     background-color: rgb(234, 234, 234);
+    /*overflow-x: hidden;*/
 }        
 #cabecalho {
     width: 100%;

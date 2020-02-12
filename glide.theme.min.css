@@ -23,7 +23,7 @@
     left:2em
 }
 .glide__arrow--right{
-    right:2em
+    right: 2em  
 }
 .glide__arrow--disabled{
     opacity:0.33
