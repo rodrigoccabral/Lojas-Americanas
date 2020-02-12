@@ -10,7 +10,8 @@ body {
 #cabecalho {
     width: 100%;
     height: 236px;
-    background-color: #e60014;
+    /*background-color: #e60014;*/
+    background-color: #1156bd;
 }
 #topo {
     width: 100%;
@@ -18,7 +19,8 @@ body {
     background-color: white;
 }
 #meio {
-    background-color: #e60014;  
+    /*background-color: #e60014;*/
+    background-color: #1156bd;  
     margin: 0 auto;
     z-index:10;
     width:100%;
@@ -82,7 +84,7 @@ body {
 #ola {
     width: 142px;
     position:absolute;
-    right: 275px;
+    right: 203px;
     top: 5px;
     font-size: 12px;
     font-family: Arial,sans-serif;
@@ -145,7 +147,8 @@ body {
     width: 260px;
     padding: 20px 15px 15px 70px;
     border-right: 15px;
-    color: #e60014;
+    /*color: #e60014;*/
+    color: #1156bd;
     cursor: pointer;
 }
 #tres-barras-img {
