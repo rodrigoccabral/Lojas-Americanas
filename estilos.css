@@ -356,16 +356,28 @@ body {
  
 }
 
-  .rodape{
+#eletronicos {
+    padding: 110px 34px 20px 24px;
+    width: 1500px;
+    height: 500px;
+}
+#ul-eletronicos {
+    padding: 15px 4px 15px 3px;
+    margin: 15px 19px 18px 11px;
+}
+.li-ul-eletronicos {
+    display: inline;
+    padding: 12px;
+}
+
+.rodape{
     background-color: rgb(35, 47, 61);
     color: rgb(170, 159, 159);
     padding: 30px 0;
     margin: 30px 0 0;
     text-align: center;
-
   }
-
-  .texto-rodape{
+.texto-rodape{
     text-decoration:none;
     color: rgb(170, 159, 159);
   }
