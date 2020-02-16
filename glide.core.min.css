@@ -1,4 +1,4 @@
-.glide {
+/*.glide {
   position: relative;
   padding: 25px 15px 15px 0px;
   width: 1511px;
@@ -14,7 +14,7 @@
     }
     .glide__slides {
       position: relative;
-      width: 1400px;
+      width: 1000px;
       list-style: none;
       backface-visibility: hidden;
       transform-style: preserve-3d;
@@ -37,7 +37,7 @@
       -webkit-touch-callout: none;
       -webkit-tap-highlight-color: transparent;
       padding: 21px 34px 28px 16px;
-      margin: -43px 104px -144px -15px;
+      margin: -43px 104px -60px -15px;
     }
       .glide__slide a {
         user-select: none;

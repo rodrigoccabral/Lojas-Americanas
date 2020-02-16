@@ -3,16 +3,17 @@
 body {
     margin: 0;
     padding: 0;
+    margin-left: fixed;
     height: 100%;
     max-width: 1400px;
     background-color: rgb(234, 234, 234);
-    /*overflow-x: hidden;*/
+    overflow-x: hidden;
 }        
 #cabecalho {
     width: 100%;
     height: 236px;
     /*background-color: #e60014;*/
-    background-color: #1156bd;
+    background-color: #232F3E;
 }
 #topo {
     width: 100%;
@@ -21,7 +22,7 @@ body {
 }
 #meio {
     /*background-color: #e60014;*/
-    background-color: #1156bd;  
+    background-color: #232F3E;  
     margin: 0 auto;
     z-index:10;
     width:100%;
@@ -126,7 +127,7 @@ body {
     display: inline;
     font-family: Arial,sans-serif;
     font-size: 15px;
-    color: white;
+    color: rgb(216, 196, 196);
     transition: all 600ms cubic-bezier(0.77, 0, 0.175, 1);	
 	cursor: pointer;
 	user-select: text;
@@ -149,7 +150,7 @@ body {
     padding: 20px 15px 15px 70px;
     border-right: 15px;
     /*color: #e60014;*/
-    color: #1156bd;
+    color: #232F3E;
     cursor: pointer;
 }
 #tres-barras-img {
@@ -166,7 +167,7 @@ body {
     margin-right: 50px;
     padding: 35px 35px 13px 56px;
     border-right: 15px;
-    color: gray;
+    color: #232F3E;
 }
 .lista-side-nav {
     display: inline;
@@ -346,8 +347,29 @@ body {
   }
   .li-ul-promocoes {
       display: inline;
-      padding: 6px;
+      padding: 5px;
   }
+
+  #ul-promocoes {
+    padding: 15px 1px 12px 0px;
+    margin: 0px 15px 15px 8px;
+ 
+}
+
+  .rodape{
+    background-color: rgb(35, 47, 61);
+    color: rgb(170, 159, 159);
+    padding: 30px 0;
+    margin: 30px 0 0;
+    text-align: center;
+
+  }
+
+  .texto-rodape{
+    text-decoration:none;
+    color: rgb(170, 159, 159);
+  }
+
 
   /*******Inicio do carrossel 2*************/
   
