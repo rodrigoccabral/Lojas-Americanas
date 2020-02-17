@@ -160,11 +160,11 @@ transition: all 0.2s ease-in-out;
 visibility: visible;
 }
 #h3-menubar {
-    margin-top: -26px;
-    margin-left: -28px;
-    width: 222px;
+    margin-top: -36px;
+    margin-left: -83px;
+    width: 307px;
     height: 73px;
-    padding: 21px 0px 0px 72px;
+    padding: 21px 0px 72px 45px;
     border-right: 15px;
     /* color: #e60014; */
     color: #232F3E;
@@ -172,7 +172,7 @@ visibility: visible;
 }
 .tres-barras-img {
     position: absolute;
-    top: 207px;
+    top: 100px;
     right: 1286px;
     cursor: pointer;
 }
@@ -196,7 +196,7 @@ visibility: visible;
     color: rgb(0, 0, 0);
     transition: all 0.2s ease-in-out;
     visibility: visible;
-    
+    padding: 20px 35px 17px 34px;
 }
 #banner {
     position: absolute;
@@ -352,7 +352,7 @@ visibility: visible;
       margin: 65px 15px 15px 15px;;
       top: 15px;
       right: 15px;
-  }
+}
 .imagem-presente {
     width: 312px;
     padding: 2px 0px 10px 12px;
@@ -372,7 +372,6 @@ visibility: visible;
     padding: 5px;
     cursor: pointer;
 }
-
 #eletronicos {
     padding: 110px 34px 20px 24px;
     width: 1500px;
@@ -387,18 +386,17 @@ visibility: visible;
     padding: 12px;
     cursor: pointer;
 }
-
 .rodape{
     background-color: rgb(35, 47, 61);
     color: rgb(170, 159, 159);
     padding: 30px 0;
     margin: 30px 0 0;
     text-align: center;
-  }
+}
 .texto-rodape{
     text-decoration:none;
     color: rgb(170, 159, 159);
-  }
+}
 
 
   /*******Inicio do carrossel 2*************/
@@ -406,9 +404,15 @@ visibility: visible;
 
   /***********Fim do carrossel 1 ************/
 
-
-  .nav-menubar {
+.dropdown {
+    position: relative;
+    display: inline-block;
     width: 245px;
+    height: 23px;
+    padding: 15px 15px 35px 15px;
+}
+.nav-menubar {
+    width: 218px;
     height: 23px;
     padding: -1px 15px 35px 15px;
     border-right: 15px;
@@ -416,41 +420,49 @@ visibility: visible;
     border: none;
     user-select: none;
 }
-  
-  .dropdown {
-    position: relative;
-    display: inline-block;
-    width: 245px;
-    height: 23px;
-    padding: 15px 15px 35px 15px;
-  }
-  
-  .dropdown-content {
-    padding: 15px 15px 35px 15px;
+.dropdown-content {
+    width: 249px;
+    height: 540px;
+    margin: 12px 109px 92px -14px;
     display: none;
     position: absolute;
     min-width: 160px;
     box-shadow: 18px 8px 16px 0px rgba(0,0,0,0.2);
-    z-index: 1;
     background-color: white;
-  }
+    position: relative;
+    z-index: 10;
+}
   
-  .dropdown-content a {
+.dropdown-content a {
+    width: 250px;
+    height: 55px;
     color: black;
-    padding: 12px 16px;
+    margin: -34px 113px 32px -57px;
     text-decoration: none;
     display: block;
-    padding: 35px 35px 13px 56px;
-  }
+    padding: 4px 38px 0px 30px;
+    font-family: "Amazon Ember",Arial,sans-serif;
+    font-size: 21px;
+}
   
   .dropdown-content a:hover {
-      background-color: #ddd;
-      padding: 35px 35px 13px 56px;
-    }
+    width: 250px;
+    height: 55px;
+    color: black;
+    margin: -34px 113px 32px -57px;
+    text-decoration: none;
+    display: block;
+    padding: 4px 38px 0px 30px;
+    background-color: #ddd;
+    transition: all 0.2s ease-in-out;
+    visibility: visible;
+    font-family: "Amazon Ember",Arial,sans-serif;
+    font-size: 21px;
+}
   
-  .dropdown:hover .dropdown-content {
-      display: block;
-      padding: 35px 35px 13px 56px;
-    }
-  
+.dropdown:hover .dropdown-content {
+    display: block;
+    padding: 35px 35px 13px 56px;
+}
+    
   /*.dropdown:hover .nav-menubar {background-color: #3e8e41;}*/
