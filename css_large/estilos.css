@@ -71,6 +71,12 @@ body {
     top: 80px;
     margin-top: -3px;
 }
+::-webkit-input-placeholder {
+    font-family:'Open Sans', sans-serif;
+    font-size: 20px;
+    position:relative;
+    top:10px;
+}
 #botao-procurar {
     background-image: url( "/imagens/lupa.png");
     background-size: 35px 30px;
@@ -229,12 +235,12 @@ button:focus {outline:0;}
 /*Ajustes dos slides/carrossel*/
 * {box-sizing: border-box;}
 .slideshow-container {
-    padding-top: 126px;
-    margin: 0px 0px 0px 0px;
+    padding-top: 135px;
+    margin: 24px 0px 0px 25px;
     max-width: 1265px;
-    height: 400px;
+    height: 410px;
     position: relative;
-    margin: auto;
+    margin: none;
 }
 
 /*Hide images by default*/
@@ -391,8 +397,8 @@ button:focus {outline:0;}
     height: 500px;
 }
 #ul-promocoes-2 {
-  padding: 0px 1px 12px 0px;
-  margin: 0px 15px 15px 8px;
+    padding: 0px 1px 12px 0px;
+    margin: 40px 15px 15px 8px;
 }
 .li-ul-promocoes-2 {
   display: inline;
@@ -417,15 +423,13 @@ button:focus {outline:0;}
 
   /***********Fim do carrossel 1 ************/
 
-.dropdown {
-    position: relative;
-    display: inline-block;
-    width: 245px;
-    height: 23px;
-    padding: 15px 15px 35px 15px;
-}
 .tres-barras-img {
     margin-left: -14px;
+    margin-top: -35px;
+    z-index: 30;
+    padding: 35px 35px 35px 35px;
+    color: black;
+    background-color: black;
 }
 .nav-menubar {
     padding: -6px 15px 35px 11px;
@@ -435,15 +439,15 @@ button:focus {outline:0;}
     user-select: none;
 }
 #h3-menubar {
-    margin-top: -44px;
-    margin-left: 16px;
-    width: 200px;
+    margin-top: -35px;
+    margin-left: -30px;
+    width: 245px;
     cursor: pointer;
 }
 .dropdown-content {
     width: 249px;
     height: 550px;
-    margin: -18px 116px 92px -14px;
+    margin: 12px 116px 92px -14px;
     display: none;
     min-width: 160px;
     box-shadow: 18px 8px 16px 0px rgba(0,0,0,0.2);
@@ -502,10 +506,42 @@ button:focus {outline:0;}
     border-radius: 10px;
     font-size: 18px;
   }
-  #h1-voce {
-    color: rgb(35, 47, 62);
+  #h1-dia {
+    color: black;
     position: absolute;
-    margin-top: -60px;
+    margin-top: 70px;
     left: 45px;
+  }
+  #h1-smartphone {
+    color: black;
+    position: absolute;
+    margin-top: 70px;
+    left: 45px;
+  }
+#h1-estrangeira {
+    color: black;
+    position: absolute;
+    left: 45px;
+}
+  #h1-voce {
+    color: black;
+    position: absolute;
+    margin-top: 12px;
+    left: 45px;
+}
+#art-1 {
+    text-align: justify;
+    margin-top: 40px;
+    margin-left: 40px;
+}
+#art-2 {
+    text-align: justify;
+    margin-top: -36px;
+    margin-left: 640px;
+}
+#art-3 {
+    text-align: justify;
+    margin-top: -36px;
+    margin-left: 1040px;
 }
     

@@ -1,10 +1,10 @@
 .glide__arrow{
     position: absolute;
     display: block;
-    top: 50%;
-    margin-left: -85px;
+    top: 62%;
+    margin-left: -4px;
     z-index: 2;
-    margin-right: 73px;
+    margin-right: -14px;
     color: white;
     text-transform: uppercase;
     padding: 9px 12px;
