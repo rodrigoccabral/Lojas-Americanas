@@ -3,10 +3,23 @@
     <head>
         <meta charset="UTF-8">
         <meta media="viewport" content="width=devide-width">
-        <link rel="stylesheet" type="text/css" href="estilos.css">
-        <link rel="stylesheet" href="glide.core.min.css">
-        <link rel="stylesheet" href="glide.theme.min.css">
-        <title>Americanas</title>
+
+                <!--Se a tela tiver no minimo 0px-->
+                <link rel="stylesheet" type="text/css" media="screen and (min-width: 0px)" href="/css_small/estilos.css"/>
+                <link rel="stylesheet" type="text/css" media="screen and (min-width: 0px)" href="/css_small/glide.core.min.css"/>
+                <link rel="stylesheet" type="text/css" media="screen and (min-width: 0px)" href="/css_small/glide.theme.min.css"/>
+
+                <!--Se a tela tiver no minimo 1000px-->
+                <link rel="stylesheet" type="text/css" media="screen and (min-width: 1000px)" href="/css_medium/estilos.css"/>
+                <link rel="stylesheet" media="screen and (min-width: 1000px)" href="/css_medium/glide.core.min.css"/>
+                <link rel="stylesheet" media="screen and (min-width: 1000px)" href="/css_medium/glide.theme.min.css"/>
+
+                <!--Se a tela tiver no minimo 1350px-->
+                <link rel="stylesheet" type="text/css" media="screen and (min-width: 1350px)" href="/css_large/estilos.css"/>
+                <link rel="stylesheet" type="text/css" media="screen and (min-width: 1350px)" href="/css_large/glide.core.min.css"/>
+                <link rel="stylesheet" type="text/css" media="screen and (min-width: 1350px)" href="/css_large/glide.theme.min.css"/>
+
+        <title>Acesso geek</title>
     </head>
     <body>
         <div id="cabecalho">
@@ -17,18 +30,26 @@
                         <div id="divlogo">
                             <h3 id="titulologo">Acessogeek.com</h3>
                         </div>
-            
+
                         <div id="formulario">
                             <form id="id-form-busca" action="/busca">                           
-                                <input id="input-procurar" type="text" placeholder="Procure o que você deseja"><button id="botao-procurar" type="button">                 
+                                <input id="input-procurar" type="text" placeholder="Procure o que você deseja"><button id="botao-procurar" type="button">   
+        
                             </form>          
                         </div>
 
                         <div id="ola">
                             <h3>Olá, faça seu login ou cadastre-se   <img src="imagens/arrow-down-red.png"></h3>
+                            <div id="ola-dropdown">
+                                <div id="ola-dropdown-content">
+                                    <button id="btn-login">Fazer login</button>
+                                    <h3 id="ola-dropdown-texto">Ou</h3>
+                                    <button id="btn-cadastrar">Cadastrar</button>
+                                </div>
+                            </div>
                         </div>
-                        <button id="botao-coracao"></button>
-                        <button id="botao-cesta"></button>
+                        <button title="Acesse seus favoritos" id="botao-coracao"></button>
+                        <button title="Acesse sua cesta" id="botao-cesta"></button>
 
 
                         <ul id="ul-lista">
@@ -39,15 +60,16 @@
                             <li class="lista">Cartão americanas.com</li>
                             <li class="lista">Pegue hoje</li>
                             <li class="lista">Nossas marcas</li>
-                            <li class="lista">Oferta do dia</li>
-                            
+                            <li class="lista">Oferta do dia</li>                        
                         </ul>
             </div>
             <div id="fim">
                
-                <div class="dropdown">          
-                    <button class="nav-menubar" role="menubar">
-                        <h3 id="h3-menubar"><img id="tres-barras-img" src="imagens/tres-barras.png">Compre por departamento</h3>
+                <div class="dropdown"> 
+                    <img class="tres-barras-img" src="imagens/tres-barras.png">         
+                    <button class="nav-menubar" role="menubar">                       
+                        <br>
+                        <h3 id="h3-menubar">Compre por departamento</h3>
                     </button>
                     <div class="dropdown-content">
                         <a href="#">Eletrônicos</a>
@@ -55,11 +77,13 @@
                         <a href="#">Moda Masculina</a>
                         <a href="#">Livros Eletrônicos</a>
                         <a href="#">Games e Consoles</a>
-                        <a href="#">Séries e TV</a>                   
+                        <a href="#">Séries e TV</a>
+                        <a href="#">Mundo Geek</a>
+                        <a href="#">Presentes</a>  
+                        <a href="#">Pet & Cia</a>  
+                        <a href="#">Mais</a>                     
                 </div>               
-            </div>   
-
-    
+            </div>     
         </div>
         <ul id="ul-lista-side-nav">
             <li class="lista-side-nav">Eletrônicos</li>
@@ -75,54 +99,37 @@
     <div id="corpo">
             <img id="banner" src="imagens/home_header.png">
         
-
         <!--Carrossel-->
 
         <div class="slideshow-container">
-
-            <div class="mySlides"> 
-            
-                <img id="imagem1" src="imagens/slide1.png">
-    
+            <div class="mySlides">           
+                <img id="imagem1" src="imagens/slide1.png">   
             </div>
-
-            <div class="mySlides"> 
-                
-                    <img id="imagem2" src="imagens/slide2.png">
-               
+            <div class="mySlides">                
+                    <img id="imagem2" src="imagens/slide2.png">               
             </div>
-
-            <div class="mySlides"> 
-               
-                <img id="imagem3" src="imagens/slide3.png">
-     
+            <div class="mySlides">               
+                <img id="imagem3" src="imagens/slide3.png">    
             </div>
-
             <!--Botão pra frente e pra trás-->
-
             <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
             <a class="next" onclick="plusSlides(1)">&#10095;</a>
-
             <!--Pontos e circulos-->
-
             <div style="text-align: center">
                 <span class="dot" onclick="currentSlide(1)"></span>
                 <span class="dot" onclick="currentSlide(2)"></span>
                 <span class="dot" onclick="currentSlide(3)"></span>
             </div>
         </div>
-
         <div id="presentes">
             <img class="imagem-presente" src="imagens/100.png">
             <img class="imagem-presente" src="imagens/200.png">
             <img class="imagem-presente" src="imagens/300.png">
             <img class="imagem-presente" src="imagens/400.png">
         </div>
-
         <br>
-
-    <div style="position: absolute; top: 820px; left: 45px">
-        <h1 style="color: rgb(35, 47, 62)">As melhores ofertas para o seu dia</h1>
+    <div>
+        <h1 id="h1-dia">As melhores ofertas para o seu dia</h1>
     </div>
 
     <div id="promocoes">
@@ -134,8 +141,8 @@
         </ul>
     </div>
 
-    <div style="position: absolute; top: 1340px; left: 45px">
-        <h1 style="color: rgb(35, 47, 62)">Os melhores smartphones</h1>
+    <div>
+        <h1 id="h1-smartphone">Os melhores smartphones</h1>
     </div>
 
     <div id="eletronicos">
@@ -150,7 +157,7 @@
     <br>
     <br>
     <div>
-        <h1 style="color: rgb(35, 47, 62); position: absolute; left: 45px">Literatura estrangeira</h1>
+        <h1 id="h1-estrangeira">Literatura estrangeira</h1>
     </div>
     <br>
     <br>
@@ -183,30 +190,34 @@
             <button class="glide__arrow glide__arrow--right" data-glide-dir=">">&#10095;</button>
           </div>
       </div>
-      <br>
-      <br>
-      <br>
-      <br>
-      <br>
-      <br>
-      <br>
-      <br>
-      <br>
-      <br>
-      <br>
-      <br>
-      <br>
-      <br>
-      <br>
-
+      <div>
+        <h1 id="h1-voce">Recomendados para você</h1>
+    </div>
+      <div id="promocoes-2">
+        <ul id="ul-promocoes-2">
+            <li class="li-ul-promocoes-2"><img src="imagens/foto-1.png"></li>
+            <li class="li-ul-promocoes-2"><img src="imagens/foto-2.png"></li>
+            <li class="li-ul-promocoes-2"><img src="imagens/foto-3.png"></li>
+            <li class="li-ul-promocoes-2"><img src="imagens/foto-4.png"></li>
+        </ul>
+    </div>
     <footer class="rodape">
-        <article>
-            <p>Rodrigo Cordeiro Cabral  </p>
-            <a class= "texto-rodape" href="https://www.linkedin.com/in/rodrigo-cabral-802a74139/" target="_blank"><p>Linkedin</p></a>
-            <a class= "texto-rodape" href="https://github.com/rodrigoccabral" target="_blank"><p>Github</p></a>
+        <div id="div-btn">
+        <button onclick="topFunction()" id="myBtn">De volta ao topo</button>
+        </div>
+        <article id="art-1">
+            <p>Rodrigo Cabral</p>
+            <p>E-mail: rodrigogmail.122@gmail.com</p>
+        </article>
+        <article id="art-2">
+            <a class= "texto-rodape" href="https://www.linkedin.com/in/rodrigo-cabral-802a74139/" title="Acesse o meu Linkedin" target="_blank"><p>Instagram</p></a>
+            <a class= "texto-rodape" href="https://github.com/rodrigoccabral" title="Acesse o meu Github" target="_blank"><p>Github</p></a>
+        </article>
+        <article id="art-3">
+            <a class= "texto-rodape" href="https://www.linkedin.com/in/rodrigo-cabral-802a74139/" title="Acesse o meu Instagram" target="_blank"><p>Twitter</p></a>
+            <a class= "texto-rodape" href="https://github.com/rodrigoccabral" title="Acesse o meu Twitter" target="_blank"><p>Github</p></a>
         </article>
     </footer>
-
     </div>
         <script src="americanas.js"></script>
         <script src="https://cdn.jsdelivr.net/npm/@glidejs/glide"></script>

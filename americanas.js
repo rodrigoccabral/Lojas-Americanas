@@ -1,3 +1,4 @@
+//-----------INÍCIO DO CARROSSEL---------------------//
 var slideIndex = 1;
 showSlides(slideIndex);
 
@@ -32,52 +33,45 @@ function showSlides(n) {
 
 }
 
-//-----------Início do carrossel 2-----------//
+//-----------FIM DO CARROSSEL---------------------//
 
 //-----------COMEÇO DO STICKY JAVASCRIPT----------//
 
 var startProductBarPos=-1;
 window.onscroll=function(){
-var bar = document.getElementById('meio');
-if(startProductBarPos<0)startProductBarPos=findPosY(bar);
+  var bar = document.getElementById('meio');
+    if(startProductBarPos<0)startProductBarPos=findPosY(bar);
 
-if(pageYOffset>startProductBarPos){
-bar.style.position='fixed';
-bar.style.top=0;
-}else{
-bar.style.position='relative';
-}
+    if(pageYOffset>startProductBarPos){
+      bar.style.position='fixed';
+      bar.style.top=0;
+    }else{
+      bar.style.position='relative';
+    }
 };
 
 function findPosY(obj) {
-var curtop = 0;
+  var curtop = 0;
 
-if (typeof (obj.offsetParent) != 'undefined' && obj.offsetParent) {
-while (obj.offsetParent) {
-curtop += obj.offsetTop;
-obj = obj.offsetParent;
-}
-curtop += obj.offsetTop;
-} else if (obj.y)
-curtop += obj.y;
-return curtop;
+  if (typeof (obj.offsetParent) != 'undefined' && obj.offsetParent) {
+    while (obj.offsetParent) {
+      curtop += obj.offsetTop;
+      obj = obj.offsetParent;
+  }
+    curtop += obj.offsetTop;
+  } else if (obj.y)
+    curtop += obj.y;
+  return curtop;
 
 }
 
 //-------FIM DO STICKY JAVASCRIPT-----------//
 
+//-------INICIO DA FUNÇÃO DE VOLTA AO TOPO--//
 
-
-//-----------------TREEVIEW DO SIDEBAR-------------//
-
-var toggler = document.getElementsByClassName("caret");
-var i;
-
-for (i = 0; i < toggler.length; i++) {
-  toggler[i].addEventListener("click", function() {
-    this.parentElement.querySelector(".nested").classList.toggle("active");
-    this.classList.toggle("caret-down");
-
-  });
+function topFunction() {
+  document.body.scrollTop = 0; // For Safari
+  document.documentElement.scrollTop = 0; // For Chrome, Firefox, IE and Opera
 }
-//-----------------FIM DO TREEVIEW DO SIDEBAR-------//
+
+//-------FIM DA FUNÇAO DE VOLTA AO TOPO-----//
