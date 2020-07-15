@@ -1,7 +1,7 @@
 .glide__arrow{
     position:absolute;
     display:block;
-    top:50%;
+    top:34%;
     z-index:2;
     color:white;
     text-transform:uppercase;
@@ -20,10 +20,10 @@
     outline:none
 }
 .glide__arrow--left{
-    left:2em
+    left: 1em
 }
 .glide__arrow--right{
-    right:2em
+    right: 4em  
 }
 .glide__arrow--disabled{
     opacity:0.33

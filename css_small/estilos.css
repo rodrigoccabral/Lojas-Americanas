@@ -3,22 +3,30 @@
 body {
     margin: 0;
     padding: 0;
+    margin-left: fixed;
     height: 100%;
     max-width: 1400px;
     background-color: rgb(234, 234, 234);
+    overflow-x: hidden;
 }        
 #cabecalho {
     width: 100%;
     height: 236px;
-    background-color: #e60014;
+    /*background-color: #e60014;*/
+    background-color: #232F3E;
 }
 #topo {
     width: 100%;
     height: 53px;
     background-color: white;
 }
+#toldo-topo {
+    width: 92%;
+    cursor: pointer;
+}
 #meio {
-    background-color: #e60014;  
+    /*background-color: #e60014;*/
+    background-color: #232F3E;  
     margin: 0 auto;
     z-index:10;
     width:100%;
@@ -82,7 +90,7 @@ body {
 #ola {
     width: 142px;
     position:absolute;
-    right: 275px;
+    right: 203px;
     top: 5px;
     font-size: 12px;
     font-family: Arial,sans-serif;
@@ -123,46 +131,60 @@ body {
     display: inline;
     font-family: Arial,sans-serif;
     font-size: 15px;
-    color: white;
+    color: rgb(216, 196, 196);
     transition: all 600ms cubic-bezier(0.77, 0, 0.175, 1);	
 	cursor: pointer;
 	user-select: text;
-    padding: 15px 15px 15px 15px;
+    padding: 15px 15px 15px 15px;   
 }
 #fim {
     width: 100%;
     height: 53px;
     background-color: white;
 }
-#nav-menubar {
+/*#nav-menubar {
     width: 245px;
-    height: 23px;
-    padding: 15px 15px 15px 15px;
+    height: 10px;
+    padding: 15px 15px 35px 15px;
     border-right: 15px;
+    background-color: white;
+    border: none;
+    user-select: none;
+}*/
+button:focus {outline:0;}
+
+#h3-menubar:hover{
+background-color: rgb(255, 255, 255);
+color: rgb(0, 0, 0);
+transition: all 0.2s ease-in-out;
+visibility: visible;
 }
 #h3-menubar {
-    margin-top: -32px;
-    width: 260px;
-    padding: 20px 15px 15px 70px;
+    margin-top: -36px;
+    margin-left: -83px;
+    width: 307px;
+    height: 73px;
+    padding: 21px 0px 72px 45px;
     border-right: 15px;
-    color: #e60014;
+    /* color: #e60014; */
+    color: #232F3E;
     cursor: pointer;
 }
-#tres-barras-img {
+.tres-barras-img {
     position: absolute;
-    top: 207px;
+    top: 100px;
     right: 1286px;
     cursor: pointer;
 }
 #ul-lista-side-nav {
     width: 100%;
     height: 23px;
-    margin-top: -48px;
+    margin-top: -68px;
     margin-left: 177px;
     margin-right: 50px;
     padding: 35px 35px 13px 56px;
     border-right: 15px;
-    color: gray;
+    color: #232F3E;
 }
 .lista-side-nav {
     display: inline;
@@ -172,9 +194,9 @@ body {
 .lista-side-nav:hover {
     background-color: rgb(240, 232, 232);
     color: rgb(0, 0, 0);
-    transition: all 0.4s ease-in-out;
+    transition: all 0.2s ease-in-out;
     visibility: visible;
-    
+    padding: 20px 35px 17px 34px;
 }
 #banner {
     position: absolute;
@@ -219,6 +241,7 @@ body {
 /*Hide images by default*/
 .mySlides {
     position: relative;
+    cursor: pointer;
 }
 
 /*Next and previous buttons*/
@@ -297,57 +320,149 @@ body {
     border-radius: 50%;
     display: inline-block;
     transition: background-color 0.6s ease;
-  }
-  .active, .dot:hover {
+}
+.active, .dot:hover {
     background-color: #717171;
-  } 
+} 
 
-  /*Fading animation*/
-  .fade {
-      -webkit-animation-name: fade;
-      -webkit-animation-duration: 1.5s;
-      animation-name: fade;
-      animation-duration: 1.5s;
-  }
-  @-webkit-keyframes fade {
-      from {opacity: .4}
-      to {opacity: 1}
-  }
-  @keyframes fade {
-      from {opacity: .4}
-      to {opacity: 1}
-  }
+/*Fading animation*/
+.fade {
+    -webkit-animation-name: fade;
+    -webkit-animation-duration: 1.5s;
+    animation-name: fade;
+    animation-duration: 1.5s;
+}
+@-webkit-keyframes fade {
+    from {opacity: .4}
+    to {opacity: 1}
+}
+@keyframes fade {
+  from {opacity: .4}
+  to {opacity: 1}
+}
 
-  /***********Fim do carrossel 1 ************/
+/***********Fim do carrossel 1 ************/
 
-  /*Presentes*/
+/*Presentes*/
 
-  #presentes {
+#presentes {
       width: 1600px;
       height: 30px;
       padding: 15px 15px 15px 15px;
       margin: 65px 15px 15px 15px;;
       top: 15px;
       right: 15px;
-  }
-  .imagem-presente {
+}
+.imagem-presente {
     width: 312px;
     padding: 2px 0px 10px 12px;
+    cursor: pointer;    
   }
-  #promocoes {
+#promocoes {
       padding: 110px 15px 15px 0px;
       width: 1500px;
       height: 500px;
   }
-  .li-ul-promocoes {
-      display: inline;
-      padding: 6px;
-  }
+#ul-promocoes {
+    padding: 15px 1px 12px 0px;
+    margin: 0px 15px 15px 8px;
+}
+.li-ul-promocoes {
+    display: inline;
+    padding: 5px;
+    cursor: pointer;
+}
+#eletronicos {
+    padding: 110px 34px 20px 24px;
+    width: 1500px;
+    height: 500px;
+}
+#ul-eletronicos {
+    padding: 15px 4px 15px 3px;
+    margin: 15px 19px 18px 11px;
+}
+.li-ul-eletronicos {
+    display: inline;
+    padding: 12px;
+    cursor: pointer;
+}
+.rodape{
+    background-color: rgb(35, 47, 61);
+    color: rgb(170, 159, 159);
+    padding: 30px 0;
+    margin: 30px 0 0;
+    text-align: center;
+}
+.texto-rodape{
+    text-decoration:none;
+    color: rgb(170, 159, 159);
+}
+
 
   /*******Inicio do carrossel 2*************/
   
 
   /***********Fim do carrossel 1 ************/
 
-
-
+.dropdown {
+    position: relative;
+    display: inline-block;
+    width: 245px;
+    height: 23px;
+    padding: 15px 15px 35px 15px;
+}
+.nav-menubar {
+    width: 218px;
+    height: 23px;
+    padding: -1px 15px 35px 15px;
+    border-right: 15px;
+    background-color: white;
+    border: none;
+    user-select: none;
+}
+.dropdown-content {
+    width: 249px;
+    height: 540px;
+    margin: 12px 109px 92px -14px;
+    display: none;
+    position: absolute;
+    min-width: 160px;
+    box-shadow: 18px 8px 16px 0px rgba(0,0,0,0.2);
+    background-color: white;
+    position: relative;
+    z-index: 10;
+}
+  
+.dropdown-content a {
+    width: 250px;
+    height: 55px;
+    color: black;
+    margin: -34px 113px 32px -57px;
+    text-decoration: none;
+    display: block;
+    padding: 4px 38px 0px 30px;
+    font-family: "Amazon Ember",Arial,sans-serif;
+    font-size: 21px;
+}
+  
+  .dropdown-content a:hover {
+    width: 250px;
+    height: 55px;
+    color: black;
+    margin: -34px 113px 32px -57px;
+    text-decoration: none;
+    display: block;
+    padding: 4px 38px 0px 30px;
+    background-color: #ddd;
+    transition: all 0.2s ease-in-out;
+    visibility: visible;
+    font-family: "Amazon Ember",Arial,sans-serif;
+    font-size: 21px;
+}
+  
+.dropdown:hover .dropdown-content {
+    display: block;
+    padding: 35px 35px 13px 56px;
+}
+    
+  /*.dropdown:hover .nav-menubar {background-color: #3e8e41;}*/
